@@ -1,0 +1,510 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image:url("");
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    background-color: #007bff;
+    color: #fff;
+    padding-top: 400px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-image: url("ART/banner 3.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+@keyframes changeColor {
+    0% { color: #ee1a1a; } 
+    10% { color: #1aeed4; } 
+    20% { color: #1aee1a; } 
+    30% { color: #d41aee; } 
+    40% { color: #e8d30f; } 
+    50% { color: #1e90ff; } 
+    60% { color: #ff7f50; } 
+    70% { color: #ff1493; } 
+    80% { color: #00ff7f; } 
+    90% { color: #8a2be2; } 
+    100% { color: #ee1a1a; } 
+}
+
+.social-icons {
+    display: flex;
+    position: relative; 
+    left: 20px; 
+    margin-top: 40px; 
+    padding-left: 200px;
+}
+
+.social-icon {
+    color: #ee1a1a; 
+    font-size: 40px;
+    margin-right: 15px;
+    text-decoration: none;
+    animation: changeColor 10s infinite linear; 
+}
+
+
+h1 {
+    font-size: 50px;
+    color: #df3333;
+    text-align: center;
+    padding-top: 20px;
+    font-family: "Dancing Script", cursive;
+}
+
+h2 {
+    font-size: 40px;
+    color: #e42727;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: "Playfair Display", serif; ;
+}
+
+p {
+    font-size: 21px;
+    max-width: 1000px;
+    color: #e6cece;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    font-family: "Playfair Display", serif; ; 
+}
+
+.media-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    padding: 20px; 
+}
+
+.media-container img, .second-container img {
+    max-width: 100%;
+    height: auto; 
+    margin: 10px; 
+    cursor: pointer;
+    border-radius: 4%;
+
+}
+
+.second-container img {
+    max-width: 100%;
+    height: auto; 
+    margin: 10px;
+}
+
+.AI-img{
+    max-width: 100%;
+    height: auto; 
+    margin: 10px;
+}
+
+.second-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.second-container video {
+    max-width: 100%;
+    height: auto; 
+    margin: 10px; 
+}
+
+.media-container-h1{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.social-icon:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+}
+
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100vw; 
+    max-width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    border-color: #bbb;
+    
+}
+ 
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+  
+  
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+  
+  
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+  
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+.intro-container {
+    position: relative; 
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.intro-container::before {
+    content: '';
+    position: absolute;
+    margin-top: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("ART/AIhead.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5; 
+    z-index: -1; 
+}
+
+.text-container {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 15px;
+    border: 1px solid white;
+    margin: 10px auto;
+    display: table;
+    position: relative; 
+    z-index: 1; 
+    
+}
+
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.navigation-buttons {
+    position: absolute; 
+    top: 100px; 
+    left: 0;
+    padding: 10px;
+    margin-bottom: 40px;
+    
+}
+
+.btn {
+    background-color: #fa1010; 
+    color: white; 
+    padding: 10px 20px; 
+    border: 2px solid white; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    font-size: 20px; 
+    transition: background-color 0.3s; 
+    cursor: pointer;  
+    margin: 5px; 
+
+
+}
+.button-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 10px; 
+    
+}
+
+.project-btn{
+    background-color: #fa1010; 
+    color: white; 
+    padding: 10px 20px; 
+    border: 2px solid white; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    font-size: 20px; 
+    transition: background-color 0.3s; 
+    cursor: pointer;  
+    margin: 5px; 
+}
+
+.me-container {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 20px;
+    border: 1px solid white;
+    margin: auto;
+    display: block;
+    width: 70%; 
+    max-width: 1000px;
+    box-sizing: border-box;
+    text-align: center; 
+    line-height: 1.6; 
+    font-family: 'Playfair Display', serif; 
+    overflow: hidden;
+    padding-left: 160px; 
+    
+}
+
+.me-container h1,
+.me-container p {
+    text-align: center; 
+    width: 80%; 
+}
+
+
+.back-button {
+    background-color: #fa1010; 
+    color: #333;
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    margin: 10px; 
+    cursor: pointer; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    transition: background-color 0.3s; 
+    border: 2px white solid;
+}
+
+.back-button:hover {
+    background-color: #3742d4; 
+}
+
+.site-footer {
+    background-color: #070707; 
+    color: rgb(241, 16, 16); 
+    text-align: left; 
+    padding: 20px 10px; 
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
+}
+
+.footer-content p {
+    margin: 0; 
+    line-height: 1.5; 
+    font-size: 20px; 
+}
+
+
+.footer-content {
+    max-width: 900px; 
+    margin: 0 auto; 
+    padding-left: 20px; 
+}
+
+body, html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.alpha-container {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-family: "Dancing Script", cursive;
+    padding: 10px; 
+    border: 1px solid white; 
+    margin: 0 auto; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    width: 80%; 
+    max-width: 100%; 
+    box-sizing: border-box;
+    
+}
+
+
+.background-image-container {
+    position: relative;
+    width: 100%;
+    height: auto; /* Adjust the height as needed */
+    background-image: url('ART/ALPHA2.png');
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.alpha-container-btn {
+    background-color: #fa1010; 
+    color: white; 
+    padding: 12px 24px; 
+    font-size: 16px; 
+    border: none; 
+    border-radius: 5px; 
+    margin: 5px 0; 
+    cursor: pointer; 
+    text-decoration: none; 
+    display: block; 
+    width: 80%; 
+    text-align: center; 
+    transition: background-color 0.3s; 
+    box-sizing: border-box; 
+    
+}
+
+.alpha-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid white; 
+    color: rgb(240, 17, 17); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('ART/AImerge.webp');
+}
+.alpha-back-btn {
+    background-color: #fa1010; 
+    color: #333; 
+    padding: 10px 20px; 
+    border: 2px solid white; 
+    border-radius: 5px;
+    margin: 10px; 
+    cursor: pointer; 
+    text-decoration: none; 
+    font-size: 16px; 
+    transition: background-color 0.3s;
+}
+
+.alpha-back-btn:hover {
+    background-color: #3742d4; 
+    color: #fff; 
+}
+
+.alpha-title {
+    color: #fcfafa;
+    font-size: 75px;
+    padding-right: 160px;
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+
+}
+
+
+.next-button-container {   
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+
+.btn.next-btn {
+    background-color: #f71111;
+    color: #111010;
+    padding: 5px 10px; 
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    padding-right: 50px;
+    border: 2px white solid;
+    text-align: center;
+}
+
+.btn.next-btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+.side-navbar {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 200px; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    box-sizing: border-box;
+    z-index: 1000; 
+}
+.nav-link {
+    padding: 10px 15px; 
+    text-decoration: none; 
+    font-size: 18px;
+    color: white; 
+    display: block; 
+    background-color: #ff0000; 
+    margin: 20px 0; 
+    transition: background-color 0.3s; 
+    border: none; 
+    border-radius: 4px; 
+    text-align: center; 
+    cursor: pointer; 
+    border: 1px white solid;
+}
+
+.nav-link:hover {
+    color: #f1f1f1;
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1px white solid;
+}
+
+
+.disclaimer {
+    border: 2px solid #ffffff; 
+    margin: 20px auto; 
+    padding: 20px; 
+    text-align: center; 
+    max-width: 800px; 
+    background-color: rgba(0, 0, 0, 0.9); 
+    box-sizing: border-box; 
+    color: #000; 
+   
+}
