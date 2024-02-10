@@ -104,9 +104,9 @@ p {
 
 .AI-img{
     max-width: 100%;
-    height: auto; 
-    margin: 10px;
-    align-items: center;
+    height: auto;
+    margin: 10px auto; /* Adjusted to auto for left and right margins */
+    display: block;
 }
 
 .second-container {
