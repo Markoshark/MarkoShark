@@ -104,20 +104,19 @@ p {
 
 .AI {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: center; 
+    align-items: center; 
     gap: 20px; 
+}
 
 .AI img {
-    max-width: 100%;
-    height: auto;
-    transition: transform 0.2s; 
-}
-    
-.AI img:hover {
-    transform: scale(1.05); 
-}
+    width: auto; 
+    height: auto; 
+    max-width: 100%; 
+    margin: 0 auto; 
 
+}
 
 .second-container {
     display: flex;
