@@ -102,12 +102,22 @@ p {
     margin: 10px;
 }
 
-.AI-img{
+.AI {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+
+.AI img {
     max-width: 100%;
     height: auto;
-    margin: 10px auto; /* Adjusted to auto for left and right margins */
-    display: block;
+    transition: transform 0.2s; 
 }
+    
+.AI img:hover {
+    transform: scale(1.05); 
+}
+
 
 .second-container {
     display: flex;
