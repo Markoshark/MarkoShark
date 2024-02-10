@@ -106,6 +106,7 @@ p {
     max-width: 100%;
     height: auto; 
     margin: 10px;
+    align-items: center;
 }
 
 .second-container {
