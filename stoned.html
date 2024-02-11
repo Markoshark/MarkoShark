@@ -12,7 +12,8 @@
             background-image: url("ART/sloths1.png");
             background-repeat: no-repeat;
             background-size: cover;
-        }
+            background-position: center; /* Adjust as needed */
+}
         
         .text-container {
             background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent white background */
@@ -44,26 +45,29 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
         }
         
-        /* Responsive adjustments */
-        @media screen and (max-width: 768px) {
-            .text-container {
-                margin: 10px; /* Less margin on smaller screens */
-            }
+       @media screen and (max-width: 768px) {
+    .alpha-back-btn {
+        padding: 15px 30px; /* Increase padding for better touch target */
+        font-size: larger; /* Increase font size for better readability */
+    }
+
+    .text-container, .alpha-container {
+        margin: 10px 5px; /* Adjust margins for mobile screens */
+        padding: 15px; /* Adjust padding for better spacing */
+    }
+
+    .button-container .project-btn {
+        padding: 12px 24px; /* Adjust button padding */
+    }
+}
         
-            .project-btn {
-                display: block; /* Stack buttons vertically */
-                width: 80%; /* Full width for touch targets */
-                margin: 10px auto; /* Center buttons with auto margins */
-            }
-        }
-        
-        /* Additional styles to ensure the alpha-container scales properly */
-        .alpha-container {
-            width: 100%; /* Use full width */
-            max-width: 1200px; /* Maximum width to constrain the layout */
-            margin: auto; /* Center the container */
-            padding: 20px; /* Padding around content */
-        }
+       .banner-image {
+            width: 100%;
+            height: auto; /* Adjust based on your preference */
+            background-image: url("URL-to-your-banner-image.jpg");
+            background-size: cover;
+            background-position: center;
+}
     </style> 
 </head>
 <body>
