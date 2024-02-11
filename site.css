@@ -14,7 +14,7 @@ header {
     background-size: 100% auto; /* Adjust width to 100% of the header */
     background-position: top center; /* Position the image at the top center */
     background-repeat: no-repeat;
-    min-height: 400px; /* Set a minimum height for the header */
+    min-height: 600px; /* Set a minimum height for the header */
 }
 
 @keyframes changeColor {
