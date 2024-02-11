@@ -72,18 +72,20 @@
             border: 1px white solid;
         }
 
-        .project-btn {
-            display: flex;
-            flex-direction: column; /* Stack the links vertically */
-            align-items: center; /* Center-align the links */
-            justify-content: center; /* Center them vertically as well, if there's enough space */
-            padding: 20px;
-            height: 100%; /* Use the full height of the container */
-            border: 2px white solid;
-            text-align: center;
-            background-color: #ff0000;
-            border-radius: 4px;
-            font-family: Arial, sans-serif;
+        .btn {
+            display: inline-block; /* or 'block' if you want each button to be on a new line */
+            width: auto; /* Adjust as needed */
+            margin: 10px; /* Spacing around buttons */
+            padding: 15px 25px; /* Padding inside buttons */
+            background-color: #ff0000; /* Background color */
+            color: white; /* Text color */
+            text-align: center; /* Center text */
+            font-family: Arial, sans-serif; /* Font family */
+            border: 2px white solid; /* Border */
+            border-radius: 4px; /* Rounded corners */
+            text-decoration: none; /* Remove underline from text */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+            transition: background-color 0.3s, box-shadow 0.3s;
         }
 
         .project-btn:hover {
@@ -92,10 +94,16 @@
         }
 
         @media screen and (max-width: 768px) {
-            .alpha-title {
-                font-size: 6vw;
+        .alpha-title {
+            font-size: 6vw;
             }
         }
+        @media screen and (max-width: 768px) {
+        .btn {
+            display: block; /* Stack buttons vertically */
+            width: 80%; /* Adjust width to fit smaller screens */
+            margin: 10px auto; /* Center buttons horizontally */
+    }
     </style>
 </head>
 <body>
