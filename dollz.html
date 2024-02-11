@@ -8,24 +8,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">  
     <style>
-        body {
+       body {
             font-family: Arial, sans-serif;
             background-color: black;
             margin: 0;
             padding: 0;
+            background-image: url('ART/OG4.webp');
         }
 
         .alpha-banner {
             background-color: black; /* Fallback color */
-            background-image: url('ART/NEO.webp'); /* Path to your banner image */
+            background-image: url('ART/ogfishtank.webp'); /* Path to your banner image */
             background-size: cover; /* Cover the entire area */
             background-position: center; /* Center the background image */
             text-align: center;
             position: relative;
-            height: 200px; /* Adjust based on your preference */
+            height: 350px; /* Adjust based on your preference */
             display: flex;
             justify-content: center;
             align-items: center;
+            max-width: 100%;
+            
         }
 
         .alpha-back-btn {
@@ -39,20 +42,14 @@
             top: 10px;
             left: 20px;
             cursor: pointer;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
         }
 
         .alpha-back-btn:hover {
             background-color: #0056b3;
         }
 
-        .alpha-title {
-            color: #fcfafa;
-            font-size: 4.5vw;
-            font-family: "Black Ops One", system-ui;
-            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-            margin: 0;
-        }
+       
 
         .background-img-container {
             background-image: url("ART\sloths2.png");
@@ -63,7 +60,7 @@
         }
 
         .text-container {
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(0, 0, 0, 0.9);
             padding: 20px;
             margin: 20px auto;
             border-radius: 10px;
@@ -74,17 +71,17 @@
         }
 
         .project-btn {
-            display: inline-block;
-            margin: 10px;
-            padding: 15px 25px;
-            background-color: #fa170f;
-            color: white;
+            display: flex;
+            flex-direction: column; /* Stack the links vertically */
+            align-items: center; /* Center-align the links */
+            justify-content: center; /* Center them vertically as well, if there's enough space */
+            padding: 20px;
+            height: 100%; /* Use the full height of the container */
+            border: 2px white solid;
             text-align: center;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.3s, box-shadow 0.3s;
+            background-color: #ff0000;
+            border-radius: 4px;
+            font-family: Arial, sans-serif;
         }
 
         .project-btn:hover {
@@ -102,7 +99,7 @@
 <body>
     <div class="alpha-banner">
        
-        <h3 class="alpha-title">STANDOUTS</h3>
+       
         <div class="alpha-spacer"></div> 
     </div>
     <div class="background-image-container">
