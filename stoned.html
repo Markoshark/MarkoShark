@@ -3,36 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>StonedSloths</title>
-    <link rel="stylesheet" href="site.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet"> 
     <style>
-        body {
+       body {
             font-family: Arial, sans-serif;
             background-color: black;
             margin: 0;
             padding: 0;
             background-image: url('ART/V2SLOTH15.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
         .alpha-banner {
-            background-color: black; /* Fallback color */
-            background-image: url('ART/V2 SLOTH1.png'); /* Path to your banner image */
-            background-size: cover; /* Cover the entire area */
-            background-position: center; /* Center the background image */
+            background-color: black;
+            background-image: url('ART/V2SLOTH1.png');
+            background-size: cover;
+            background-position: center;
             text-align: center;
             position: relative;
-            height: 350px; /* Adjust based on your preference */
+            height: 350px;
             display: flex;
             justify-content: center;
             align-items: center;
-            max-width: 100%;
-            
         }
 
         .background-img-container {
-            background-image: url("ART\sloths2.png");
+            background-image: url("ART/sloths2.png");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -54,43 +53,37 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 10px; /* Space between buttons */
+            gap: 10px;
             padding: 20px;
         }
 
-/* Styles for individual buttons */
         .project-btn {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            height: 100%;
-            border: 2px white solid;
-            text-align: center;
+            padding: 10px 20px;
             background-color: #ff0000;
-            border-radius: 4px;
+            color: white;
+            text-align: center;
             font-family: Arial, sans-serif;
-            color: #030303;
             font-size: 18px;
+            border: 2px solid white;
+            border-radius: 4px;
+            text-decoration: none;
+            display: block; /* Changed for consistency */
+            width: auto;
+            margin: 5px auto; /* Center buttons */
         }
-
+                
         .project-btn:hover {
             background-color: #0056b3;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
 
-/* Media query for small screens */
-@media screen and (max-width: 768px) {
-        .project-btn-container {
-            flex-direction: column;
+        @media screen and (max-width: 768px) {
+            .project-btn {
+                width: 100%; /* Full width for small screens */
+                margin: 5px 0; /* Adjusted margin for visual spacing */
+            }
         }
 
-        .project-btn {
-            width: 100%; /* Full width */
-            margin: 10px 0; /* Adjust margin for stacking */
-            padding: 10px 20px; /* Adjust padding */
-       }
        
         
     </style> 
