@@ -74,17 +74,12 @@
         }
 
         .project-btn {
-            display: inline-block;
-            margin: 10px;
-            padding: 15px 25px;
-            background-color: #fa170f;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.3s, box-shadow 0.3s;
+             display: flex;
+             flex-direction: column; /* Stack the links vertically */
+             align-items: center; /* Center-align the links */
+             justify-content: center; /* Center them vertically as well, if there's enough space */
+             padding: 20px;
+             height: 100%; /* Use the full height of the container */
         }
 
         .project-btn:hover {
