@@ -9,12 +9,12 @@ header {
     position: relative;
     background-color: #007bff;
     color: #fff;
-    padding-top: 25%; /* Responsive padding-top to maintain aspect ratio of the banner */
-    padding-bottom: 50px; /* Space for social icons on larger screens */
     text-align: center;
-    background-size: cover;
-    background-position: center;
     background-image: url("ART/banner 3.jpeg");
+    background-size: 100% auto; /* Adjust width to 100% of the header */
+    background-position: top center; /* Position the image at the top center */
+    background-repeat: no-repeat;
+    min-height: 400px; /* Set a minimum height for the header */
 }
 
 @keyframes changeColor {
@@ -59,8 +59,8 @@ header {
 
 @media screen and (max-width: 768px) {
     header {
-        padding-top: 20%;
-        padding-bottom: 0; /* Remove padding to place social icons below the header */
+        background-size: cover; /* Cover the entire area of the header */
+        min-height: 200px; /* Adjust the height on smaller screens */
     }
 
     .social-icons {
