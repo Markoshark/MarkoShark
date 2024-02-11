@@ -72,6 +72,7 @@ header {
 
     .me-container {
         padding-top: 100px; /* Provide enough space for the social icons to fit above the content */
+        border: 1px white solid;
     }
 
     .social-icon {
@@ -231,4 +232,11 @@ body, html {
         width: 100%; /* Optional: if you want the links to take the full width */
         /* Adjust padding and font-size as needed for smaller screens */
     }
+}
+.text-container {
+    border: 1px white solid;
+}
+
+.me-container {
+    border: 1px white solid;
 }
