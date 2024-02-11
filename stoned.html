@@ -85,14 +85,22 @@
             color: #030303;
             font-size: 18px;
         }
+        .project-btn-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px; /* Space between buttons */
+            padding: 20px;
+        }
 
         .project-btn:hover {
             background-color: #0056b3;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
         @media screen and (max-width: 768px) {
-       .project-btn-container {
+        .project-btn-container {
             flex-direction: column; /* Stack buttons vertically on smaller screens */
+            width: 100%;
        }
     
        .btn {
