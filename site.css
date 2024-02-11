@@ -14,8 +14,8 @@ header {
     color: #fff;
     text-align: center;
     background-image: url("ART/banner 3.jpeg");
-    background-size: 100% auto; /* Adjust width to 100% of the header */
-    background-position: top center; /* Position the image at the top center */
+    background-size: cover; /* This will cover the entire area */
+    background-position: center center; /* Center the image */
     background-repeat: no-repeat;
     min-height: 600px; /* Set a minimum height for the header */
 }
@@ -92,7 +92,8 @@ h1 {
     font-size: calc(1.5em + 1vw);
     color: #df3333;
     font-family: "Dancing Script", cursive;
-    padding-top: 5px;
+    margin-top: 20px; /* Adjust the top margin to reduce the gap */
+    padding-top: 0; /* Remove padding-top if it's creating too much space */
 }
 
 h2 {
@@ -242,4 +243,5 @@ body, html {
 
 .me-container {
     border: 1px white solid;
+    padding-top: 20px;
 }
