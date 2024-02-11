@@ -3,6 +3,9 @@ body {
     background-color: black;
     margin: 0;
     padding: 0;
+    background-image: url("ART\The Celestial Sentinel.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
