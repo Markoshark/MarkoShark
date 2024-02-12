@@ -64,24 +64,29 @@
             color: red;
             font-weight: bold;
         }
+        .home-button-container {
+            text-align: center; /* Center-align the container */
+            padding: 20px 0; /* Add some padding above and below the button */
+        }
 
         .back-button {
+    /* Adjust your existing .back-button styles or add new ones */
             background-color: #fa1010; /* Red background */
             color: white; /* White text */
-            padding: 10px 20px; /* Padding top and bottom, and a little more on the sides */
-            border: 2px solid white; /* White border */
+            padding: 10px 20px; /* Padding */
+            border: none; /* No border */
             border-radius: 5px; /* Rounded corners */
             cursor: pointer; /* Pointer cursor on hover */
             text-decoration: none; /* No underline */
             font-size: 16px; /* Font size */
-            margin-top: 10px; /* Margin at the top */
-            margin-bottom: 10px; /* Margin at the bottom */
-            transition: background-color 0.3s, color 0.3s; /* Transition for background and text color */
-            display: inline-block; /* Allows setting margins and doesn't break the flow */
-            position: absolute; /* Position it absolutely */
-            top: 10px; /* Distance from the top of the page */
-            left: 10px; /* Distance from the left side of the page */
+            display: inline-block; /* Needed for text-align center to work on the container */
+    /* Remove position:absolute and related properties if they exist */
         }
+
+        .back-button:hover {
+            background-color: #c81010; /* Darker shade on hover */
+        }
+       
 
         .back-button:hover {
             background-color: #c81010; /* Darker red on hover */
@@ -300,8 +305,9 @@
         </section>
         <p class="important">Remember, the safety of your assets in the crypto world largely depends on your vigilance and the security practices you implement.</p>
     </div>
+    
     <div>
-        <div class="back-button"
+        <div class="home-button-container">
          <button onclick="window.history.back();" class="back-button">HOME</button>
     </div>
     <div class="footer">
