@@ -18,7 +18,7 @@
 
         .alpha-banner {
             background-color: black;
-            background-image: url('ART/V2SLOTH11.png');
+            background-image: url('ART/V2SLOTH15.webp');
             background-size: cover;
             background-position: center;
             text-align: center;
@@ -56,22 +56,26 @@
             text-decoration: none; /* Remove underline */
             border: none; /* No border */
             border-radius: 5px; /* Rounded corners */
-            display: inline-block; /* Necessary for padding and margin */
-            margin: 5px; /* Space between buttons */
-            transition: background-color 0.3s; /* Smooth transition for hover effect */
+            display: block; /* Ensure that each link is on its own line */
+            margin: 10px auto; /* Center the buttons and add space between them */
             text-align: center;
+            width: calc(100% - 40px); /* Adjust width similar to nav-link for mobile */
+            transition: background-color 0.3s;
         }
         
         @media screen and (max-width: 768px) {
             .play-link {
-                width: 90%; /* Adjust width for mobile */
-                margin: 10px auto; /* Center buttons with auto margin and add space between */
-                display: block; /* Make each link take its own line */
+                
             }
 
-            .text-container p, .text-container h2 {
-                font-size: 18px; /* Increase text size for readability */
-            }
+            .play-buttons-container {
+             display: flex;
+             flex-direction: column; /* Stack the links vertically */
+             align-items: center; /* Center-align the links */
+             justify-content: center; /* Center them vertically */
+             padding: 20px;
+             width: 100%; /* Ensure full width */
+           }
         }
     </style> 
 </head>
