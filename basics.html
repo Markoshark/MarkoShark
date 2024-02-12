@@ -69,11 +69,23 @@
             padding-left: 280px;
         }
         .back-button {
-            border: 2px white solid;/* Needed for text-align center to work on the container */
-            text-align: center;
-    
+    /* Other existing styles */
+            border: 2px solid #ffffff; /* White border, 2 pixels wide */
+            border-radius: 5px; /* Rounded corners for the border */
+            padding: 10px 20px; /* Adjust padding as needed */
+            font-size: 16px; /* Adjust font size as needed */
+            color: #fff; /* White text */
+            background-color: #fa1010; /* Red background */
+            cursor: pointer; /* Changes cursor to pointer on hover */
+            text-align: center; /* Centers the text */
+            display: inline-block; /* Allows the use of text-align and other box-model properties */
+            margin: 0 auto; /* Centers the button if the parent has text-align: center */
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
         }
 
+        .back-button:hover {
+            background-color: #c81010; /* Darker red on hover */
+   }
     </style>
 </head>
 <body>
