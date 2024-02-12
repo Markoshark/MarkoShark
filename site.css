@@ -291,8 +291,8 @@ body, html {
     background-color: #fa1010; /* Red background */
     color: white; /* White text */
     text-decoration: none; /* Removes underline from the link */
-    padding: 15px 30px; /* Increases padding for a larger button */
-    font-size: 20px; /* Larger font size for the text */
+    padding: 20px 35px; /* Increases padding for a larger button */
+    font-size: 45px; /* Larger font size for the text */
     border: none; /* No border */
     border-radius: 5px; /* Rounded corners */
     cursor: pointer; /* Changes cursor to pointer on hover */
