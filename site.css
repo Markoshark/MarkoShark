@@ -311,19 +311,16 @@ body, html {
 }
 
 .play-link {
-    background-color: #fa1010;
-    color: white;
-    text-decoration: none;
-    padding: 15px 30px; /* Adjusted for better sizing */
-    margin: 5px 0; /* Ensure a little space between buttons */
-    width: auto; /* Adjust if you need full width or specific sizing */
-    text-align: center;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    border: 2px solid white; /* Adjusted for visibility */
-    font-size: 18px; /* Adjusted for better readability */
-    display: block; /* Change to inline-block if you prefer buttons side by side */
-    cursor: pointer;
+    background-color: #fa1010; /* Red */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding */
+    text-decoration: none; /* Remove underline */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    display: inline-block; /* Necessary for padding and margin */
+    margin: 5px; /* Space between buttons */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+ 
 }
 
 .play-link:hover {
