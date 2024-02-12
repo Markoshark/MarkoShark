@@ -51,7 +51,40 @@
             background-color: rgba(0, 0, 0, 0.9);
             border: 1px white solid;
         }
+         .doll-link {
+            background-color: #fa1010; /* Red */
+            color: rgb(7, 6, 6); /* White text */
+            padding: 20px 30px; /* Padding */
+            font-size: 45px;
+            text-decoration: none; /* Remove underline */
+            border: 3px solid #ffffff;
+            border-radius: 5px; /* Rounded corners */
+            display: block; /* Ensure that each link is on its own line */
+            margin: 10px auto; /* Center the buttons and add space between them */
+            text-align: center;
+            width: calc(100% - 40px); /* Adjust width similar to nav-link for mobile */
+            transition: background-color 0.3s;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .doll-link {
+                
+            }
 
+            .doll-buttons-container {
+             display: flex;
+             flex-direction: column; /* Stack the links vertically */
+             align-items: center; /* Center-align the links */
+             justify-content: center; /* Center them vertically */
+             padding: 20px;
+             width: 100%; /* Ensure full width */
+           }
+
+            .doll-link:hover {
+             background-color: #c81010; /* Slightly darker red on hover */
+             transform: scale(1.05); /* Slightly increase size on hover */
+           }
+        }
         
     }
     </style>
@@ -79,18 +112,18 @@
         
             <p>Please visit the following for more details:</p>
         </div>
-            <div class="navigation-buttons">
-            <a href="https://discord.gg/lunardollz" class="nav-link" target="_blank">LUNARDOLLZ DISCORD</a>
+            <div class="doll-buttons">
+            <a href="https://discord.gg/lunardollz" class="doll-link" target="_blank">LUNARDOLLZ DISCORD</a>
 
-            <a href="https://www.lunardollz.com/" class="nav-link" target="_blank">LUNARDOLLZ WEBSITE</a>
+            <a href="https://www.lunardollz.com/" class="doll-link" target="_blank">LUNARDOLLZ WEBSITE</a>
 
-            <a href="https://twitter.com/LunardollzNft" class="nav-link" target="_blank">LUNARDOLLZ X ACCOUNT</a>
+            <a href="https://twitter.com/LunardollzNft" class="doll-link" target="_blank">LUNARDOLLZ X ACCOUNT</a>
 
-            <a href="https://magiceden.io/marketplace/lunardollz_nft" class="nav-link" target="_blank">LUNARDOLLZ OG COLLECTION</a>
+            <a href="https://magiceden.io/marketplace/lunardollz_nft" class="doll-link" target="_blank">LUNARDOLLZ OG COLLECTION</a>
             
-            <a href="https://magiceden.io/marketplace/mutant_dollz_nft" class="nav-link" target="_blank">LUNARDOLLZ MUTANT COLLECTION</a>
+            <a href="https://magiceden.io/marketplace/mutant_dollz_nft" class="doll-link" target="_blank">LUNARDOLLZ MUTANT COLLECTION</a>
 
-            <a href="index.html" class="btn" target="_blank">HOME</a>   
+            <a href="index.html" class="doll-link" target="_blank">HOME</a>   
             </div>
         </div>
     </div>
