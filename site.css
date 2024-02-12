@@ -280,5 +280,16 @@ body, html {
         width: calc(100% - 40px); /* Adjust width for mobile */
     }
 }
-
+.back-button {
+    background-color: #fa1010;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px 0; /* Ensure a little space between buttons */
+    width: calc(100% - 40px); /* Full width minus padding */
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    
+}
 
