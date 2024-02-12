@@ -146,7 +146,7 @@ p {
     cursor: pointer;
 }
 
-.btn, .alpha-container-btn, .nav-link, .back-button, .alpha-back-btn, .btn.next-btn {
+.btn, .alpha-container-btn, .nav-link, .alpha-back-btn, .btn.next-btn {
     background-color: #fa1010;
     color: white;
     padding: 10px 20px;
@@ -160,7 +160,7 @@ p {
     transition: background-color 0.3s;
 }
 
-.btn:hover, .alpha-container-btn:hover, .nav-link:hover, .back-button:hover, .alpha-back-btn:hover, .btn.next-btn:hover {
+.btn:hover, .alpha-container-btn:hover, .nav-link:hover, .alpha-back-btn:hover, .btn.next-btn:hover {
     background-color: #0056b3;
     padding-left: 30px;
 }
