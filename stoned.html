@@ -13,7 +13,7 @@
             background-color: black;
             margin: 0;
             padding: 0;
-            background-image: url('ART/OG4.webp');
+            background-image: url('ART/V2SLOTH10.png');
               
         }
 
@@ -49,6 +49,45 @@
             width: auto;
             max-width: 95%;
         }
+        .play-link {
+            background-color: #fa1010; /* Red */
+            color: white; /* White text */
+            padding: 10px 20px; /* Padding */
+            text-decoration: none; /* Remove underline */
+            border: none; /* No border */
+            border-radius: 5px; /* Rounded corners */
+            display: inline-block; /* Necessary for padding and margin */
+            margin: 5px; /* Space between buttons */
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
+ 
+        }
+
+        .play-link:hover {
+            background-color: #fa1010 !important;
+        }
+
+@media screen and (max-width: 768px) {
+       .play-link {
+            width: calc(100% - 40px); /* Adjust width for mobile */
+       }
+      .play-link-buttons {
+            display: flex;
+            flex-direction: column; /* Stack the links vertically */
+            align-items: center; /* Center-align the links */
+            justify-content: center; /* Center them vertically as well, if there's enough space */
+            padding: 20px;
+            height: 100%; /* Use the full height of the container */
+       }
+       .play-link {
+            margin: 10px 0; /* Spacing between links */
+            text-align: center; /
+       }
+    
+       .play-buttons-container {
+            border: 1px white solid;
+            padding-top: 20px;    
+}
+        
 
        
     }     
