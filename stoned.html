@@ -8,13 +8,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="site.css">
     <style>
-       body {
+        body {
             font-family: Arial, sans-serif;
             background-color: black;
             margin: 0;
             padding: 0;
             background-image: url('ART/V2SLOTH10.png');
-              
         }
 
         .alpha-banner {
@@ -49,6 +48,7 @@
             width: auto;
             max-width: 95%;
         }
+
         .play-link {
             background-color: #fa1010; /* Red */
             color: white; /* White text */
@@ -59,38 +59,30 @@
             display: inline-block; /* Necessary for padding and margin */
             margin: 5px; /* Space between buttons */
             transition: background-color 0.3s; /* Smooth transition for hover effect */
- 
         }
 
         .play-link:hover {
             background-color: #fa1010 !important;
         }
 
-@media screen and (max-width: 768px) {
-       .play-link {
-            width: calc(100% - 40px); /* Adjust width for mobile */
-       }
-      .play-link-buttons {
-            display: flex;
-            flex-direction: column; /* Stack the links vertically */
-            align-items: center; /* Center-align the links */
-            justify-content: center; /* Center them vertically as well, if there's enough space */
-            padding: 20px;
-            height: 100%; /* Use the full height of the container */
-       }
-       .play-link {
-            margin: 10px 0; /* Spacing between links */
-            text-align: center; /
-       }
-    
-       .play-buttons-container {
-            border: 1px white solid;
-            padding-top: 20px;    
-}
-        
+        @media screen and (max-width: 768px) {
+            .play-link {
+                width: calc(100% - 20px); /* Make button width almost full-width, accounting for a bit of padding */
+                padding: 15px 20px; /* Increase padding for larger touch targets */
+                font-size: 18px; /* Increase font size for better readability */
+                margin: 10px 0; /* Increase margin for spacing between buttons */
+                text-align: center;
+            }
 
-       
-    }     
+            .play-buttons {
+                display: flex;
+                flex-direction: column; /* Stack the links vertically */
+                align-items: center; /* Center-align the links */
+                justify-content: center; /* Center them vertically as well, if there's enough space */
+                width: 100%; /* Ensure the container uses full width to center buttons properly */
+                padding: 20px 0; /* Add some padding on top and bottom */
+            }
+        }
     </style> 
 </head>
 <body>
