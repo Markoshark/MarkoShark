@@ -3,8 +3,6 @@ body {
     background-color: black;
     margin: 0;
     padding: 0;
-    background-image: url("ART\The Celestial Sentinel.png");
-    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -324,14 +322,14 @@ body, html {
 }
 
 .play-link:hover {
-    background-color: #0056b3;
+    background-color: #fa1010 !important;
 }
 
 @media screen and (max-width: 768px) {
     .play-link {
         width: calc(100% - 40px); /* Adjust width for mobile */
     }
-.play-buttons {
+.play-link-buttons {
     display: flex;
     flex-direction: column; /* Stack the links vertically */
     align-items: center; /* Center-align the links */
